@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Guide</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header>
+        <img style="height: 180px;" src="3d-travel-icon-with-compass-removebg-preview.png" alt="3d-travel-icon-with-compass-removebg-preview">
+        <h1>AI Travel Guide</h1>
+        <p>Your personal travel assistant</p>
+        <a href="openai.html"></a>
+    </header>
+
+    <main>
+        <div class="destination-selection">
+            <h2>Select your destination:</h2>
+            <select id="destination-select">
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="new-york">New York</option>
+                <option value="sydney">Sydney</option>
+            </select>
+            <button onclick="getDestinationInfo()">Get Travel Tips</button>
+        </div>
+
+        <div id="destination-info" class="destination-info">
+            <!-- Destination info will be shown here -->
+        </div>
+
+        <!-- AI Chatbot Section -->
+        <div class="chatbot">
+            <h2>Ask the AI Assistant:</h2>
+            <input type="text" id="user-query" placeholder="Ask something about travel...">
+            <button onclick="askAI()">Ask</button>
+
+            <div id="chatbot-response" class="chatbot-response">
+                <!-- AI responses will be shown here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Travel Guide | Powered by JavaScript</p>
+    </footer>
+
+    <script src="main.JS"></script>
+</body>
+</html>
